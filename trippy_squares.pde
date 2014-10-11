@@ -8,7 +8,7 @@ int circle_color;
 int counter;
 
 void setup(){
-  size(800,800);
+  size(1600,800);
   frameRate(30);
   /* start oscP5, listening for incoming messages at port 8080 */
   oscP5 = new OscP5(this,8080);
@@ -40,7 +40,7 @@ void draw(){
   strokeWeight(6);
   noFill();
   rectMode(CENTER);
-  for(int i = 0; i < 5; i++) {
+  for(int i = 0; i < 10; i++) {
     for(int k = 0; k < 5; k++) {
       rect(100 + i*200, 100 + k*200, value *3, value *3);
     }
